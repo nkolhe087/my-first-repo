@@ -14,7 +14,6 @@ public class HelloWorldApplication {
 		SpringApplication.run(HelloWorldApplication.class, args);
 	}
 
-
     @GetMapping("/book")
     public Book bookByName(@RequestParam(name = "name") String name){
         return new Book(10, "Spring Boot Basics", "Namita");
